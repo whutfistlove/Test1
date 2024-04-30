@@ -97,8 +97,7 @@ int compress1()
 	char code_buf[256] = "\0";		// 待存编码缓冲区
 	unsigned int code_len;
 	/*
-	** 动态分配256个结点，暂存字符频度，
-	** 统计并拷贝到树结点后立即释放
+
 	*/
 	TmpNode *tmp_nodes = (TmpNode *)malloc(256 * sizeof(TmpNode));
 
